@@ -1,0 +1,111 @@
+.single-country-main{
+    display: block;
+    flex-direction: column;
+    background-color: hsl(207, 26%, 17%);
+    padding: 2rem;
+    color: white;
+    height: 100vh;
+}
+.button{
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: hsl(208, 25%, 26%);
+    cursor: pointer;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    font-size: 1rem;
+}
+.country{
+    font-size: 1.5rem;
+}
+.middle{
+    display: flex;
+    flex-direction: row;
+}
+.image-container{
+    width: 30rem;
+    height: 20rem;
+    margin-right: 4rem;
+}
+.image-container img{
+    width: 30rem;
+    height: 20rem;
+}
+.native-name, .population, .region, .sub-region, .capital, .languages, .currencies, .toplevel-domain, .border-contries{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+}
+.r-left{
+    margin-right: 1.75rem;
+}
+.r-left p{
+    color: rgb(229, 228, 228);
+}
+.r-left span{
+    margin-right: 0.5rem;
+}
+.r-right span{
+    margin-right: 0.5rem;
+}
+.r-right p{
+    margin-right: 0.5rem;
+    background-color: hsl(208, 25%, 26%);
+    padding: 0.25rem;
+    color: rgb(229, 228, 228);
+}
+.border-span{
+    margin-right: 0.5rem;
+}
+.border-contries{
+    display: flex;
+    flex-wrap: wrap;
+}
+.border-contries p{
+    margin-right: 0.5rem;
+    background-color: hsl(208, 25%, 26%);
+    padding: 0.25rem;
+    color: rgb(229, 228, 228);
+}
+
+
+@media only screen and (max-width:500px){
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .image-container{
+        width: 20rem;
+        height: 15rem;
+        margin-right: 4rem;
+    }
+    .image-container img{
+        width: 20rem;
+        height: 15rem;
+    }
+    .country{
+        padding-top: 0.5rem;
+    }
+    .middle{
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .border-contries {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+

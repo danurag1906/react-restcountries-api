@@ -1,0 +1,9 @@
+.drop-down-div{
+    background-color: hsl(207, 26%, 17%);
+}
+
+@media only screen and (max-width:500px){
+    .drop-down-div{
+        z-index: 0;
+    }
+}

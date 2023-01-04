@@ -1,0 +1,57 @@
+.country-main{
+    background-color: hsl(208, 25%, 26%);
+    box-shadow: 1px 1px 10px black;
+    width: 15rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.image-div{
+    width: 15rem;
+    height: 10rem;
+}
+.image{
+    width: 15rem;
+    height: 10rem;
+}
+.country-data{
+    padding: 0rem;
+    color: white;
+}
+.country-name{
+    padding-left: 0.5rem;
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+}
+.country-population {
+    padding-left: 0.5rem;
+    /* align-items: center; */
+    display: flex;
+    flex-direction: row;
+}
+.country-capital{
+    padding-left: 0.5rem;
+    /* align-items: center; */
+    display: flex;
+    flex-direction: row;
+}
+.country-region{
+    padding-left: 0.5rem;
+    /* align-items: center; */
+    display: flex;
+    flex-direction: row;
+}
+span{
+    font-weight: 600;
+    padding-right: 0.5rem;
+}
+
+.country-region p{
+    color: rgb(229, 228, 228);
+}
+.country-population p{
+    color: rgb(229, 228, 228);
+}
+.country-capital p{
+    color: rgb(229, 228, 228);;
+}

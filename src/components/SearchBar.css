@@ -1,0 +1,10 @@
+.searchForm input{
+    padding: 1rem;
+    background-color: hsl(208, 25%, 26%);
+    border: none;
+    color: white;
+}
+::placeholder{
+    color: white;
+}
+
