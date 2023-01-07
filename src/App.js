@@ -1,14 +1,12 @@
 import './App.css';
-import {Routes,Route,useNavigate} from 'react-router-dom'
+import {Routes,Route} from 'react-router-dom'
 import { useState,useEffect } from 'react'
 import AllPosts from './components/AllPosts';
 import SingleCountry from './components/SingleCountry';
 import Missing from './components/Missing';
 import axios from 'axios'
 import Header from './components/Header';
-import SearchBar from './components/SearchBar';
-import DropDown from './components/DropDown';
-import FiltersComponent from './components/FiltersComponent';
+
 
 function App() {
 
@@ -19,7 +17,7 @@ function App() {
   const [search,setSearch] =useState('')
   const [searchResult,setSearchResult]=useState([])
   const [filter,setFilter]=useState('');
-  
+
 
 
   useEffect(()=>{
@@ -45,13 +43,13 @@ function App() {
 
     setSearchResult(filteredData)
 
-  },[filter])
+  },[allCountries,filter])
 
   return (
     <div className="App">
       <Header  />
       <Routes>
-        <Route exact path='/' element={<AllPosts allCountries={searchResult} isLoading={isLoading} search={search} setSearch={setSearch} filter={filter} setFilter={setFilter} />} />
+        <Route exact path='/' element={<AllPosts allCountries={searchResult} isLoading={isLoading} search={search} setSearch={setSearch} filter={filter} setFilter={setFilter}  />} />
         <Route exact path='/country/:numericCode' element={<SingleCountry allCountries={allCountries} isLoading={isLoading} />}/>
         <Route path='*' element={<Missing/>} />
       </Routes>

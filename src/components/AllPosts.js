@@ -7,7 +7,7 @@ import FiltersComponent from './FiltersComponent'
 const AllPosts = ({allCountries,isLoading,search,setSearch,filter,setFilter}) => {
   return (
     <>
-    <div className="allposts">
+    <div>
     <FiltersComponent search={search} setSearch={setSearch} filter={filter} setFilter={setFilter} />
     {isLoading && <p>Loading data.... Please wait!</p> }
     { !allCountries && <p>No such Country found...</p> }

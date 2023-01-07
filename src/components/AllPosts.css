@@ -1,12 +1,9 @@
-.allposts{
-    color: white;
-}
 .AllPosts{
-    background-color: hsl(207, 26%, 17%);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1rem;
     padding: 2rem;
+    background-color: hsl(209, 23%, 22%);
 }
 
 @media only screen and (max-width:500px){

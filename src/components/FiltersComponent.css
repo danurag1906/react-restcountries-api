@@ -1,14 +1,14 @@
-.filters-div{
+.filtersdiv{
     padding: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    color: white;
-    background-color: hsl(207, 26%, 17%);
+    background-color: hsl(209, 23%, 22%);
 }
 
+
 @media only screen and (max-width:500px){
-    .filters-div{
+    .filtersdiv{
         display: flex;
         flex-direction: column;
         justify-content: center;

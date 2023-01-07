@@ -1,10 +1,11 @@
 .searchForm input{
     padding: 1rem;
-    background-color: hsl(208, 25%, 26%);
     border: none;
     color: white;
+    background-color: hsl(208, 25%, 26%);
 }
-::placeholder{
+/* ::placeholder{
     color: white;
-}
+} */
+
 
