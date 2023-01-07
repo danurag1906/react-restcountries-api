@@ -9,7 +9,7 @@ const AllPosts = ({allCountries,isLoading,search,setSearch,filter,setFilter}) =>
     <>
     <div>
     <FiltersComponent search={search} setSearch={setSearch} filter={filter} setFilter={setFilter} />
-    {isLoading && <p>Loading data.... Please wait!</p> }
+    {isLoading && <p style={{color:'white'}} >Loading data.... Please wait!</p> }
     { !allCountries && <p>No such Country found...</p> }
 
     <main className='AllPosts'>

@@ -50,7 +50,7 @@ function App() {
       <Header  />
       <Routes>
         <Route exact path='/' element={<AllPosts allCountries={searchResult} isLoading={isLoading} search={search} setSearch={setSearch} filter={filter} setFilter={setFilter}  />} />
-        <Route exact path='/country/:numericCode' element={<SingleCountry allCountries={allCountries} isLoading={isLoading} />}/>
+        <Route exact path='/country/:numericCode' element={<SingleCountry  allCountries={allCountries} isLoading={isLoading} />}/>
         <Route path='*' element={<Missing/>} />
       </Routes>
     </div>

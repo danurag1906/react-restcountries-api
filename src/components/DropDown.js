@@ -9,7 +9,7 @@ import Dropdown from 'react-bootstrap/Dropdown'
 const DropDown = ({filter,setFilter}) => {
 
   const handleSelect=(e)=>{
-    console.log(e);
+    
     setFilter(e);
   }
 
