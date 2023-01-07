@@ -84,6 +84,14 @@
     .content{
         display: flex;
         flex-direction: column;
+        height: fit-content;
+    }
+    .single-country-main{
+        padding: 1rem;
+        overflow-x: scroll;
+        /* display: flex;
+        flex-direction: column;
+        height: max-content; */
     }
     .image-container{
         width: 20rem;
